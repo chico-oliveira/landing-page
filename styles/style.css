@@ -1,0 +1,116 @@
+/* 
+##################################################################
+Creates variables so colours can be called throughout the css file
+##################################################################
+*/
+
+:root {
+    --dark-blue: #1F2937;
+    --button-bg: #3882F6;
+    --light-grey: #E5E7EB;
+    --dark-grey: #696969;
+    --cream-white: #F9FAF8;
+    --content-width: 800px;
+  }
+
+
+/*
+###########
+Base styles
+###########
+*/
+
+html, body {
+    width: 100%;
+  }
+
+body {
+    height: 100vh; 
+    font-size: 14px;
+    font-family: sans-serif;
+    color: var(--dark-grey);
+}
+
+h1, h3, h5 {
+    color: var(--cream-white);
+    font-weight: bolder;
+}
+
+h2, h4 {
+    color: var(--dark-blue);
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 48px;    
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;   
+}
+
+h4 {
+    font-size: 15px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+button {
+    background-color: #3882F6;
+    color: var(--cream-white);    
+}
+
+/* 
+################
+Main styles
+################
+*/
+
+.content {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.links > * {
+    color: var(--light-grey);
+    font-size: 18px;
+}
+
+.top {
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+}
+
+.quote-section {
+    background-color: var(--light-grey);
+}
+
+.quote-section p {
+    color: var(--dark-blue);
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.sign-up {
+    background-color: var(--button-bg);
+    color: var(--cream-white);
+}
+
+footer {
+    flex: 1;
+    background-color: var(--dark-blue);
+    color: var(--cream-white);
+}
