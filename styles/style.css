@@ -1,7 +1,16 @@
+/*
+#######
+Imports
+#######
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+
 /* 
-##################################################################
-Creates variables so colours can be called throughout the css file
-##################################################################
+############################################################################
+Creates variables so repeat values can be referenced throughout the css file
+############################################################################
 */
 
 :root {
@@ -10,7 +19,7 @@ Creates variables so colours can be called throughout the css file
     --light-grey: #E5E7EB;
     --dark-grey: #696969;
     --cream-white: #F9FAF8;
-    --content-width: 800px;
+    --content-width: 1050px;
   }
 
 
@@ -27,7 +36,7 @@ html, body {
 body {
     height: 100vh; 
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--dark-grey);
 }
 
@@ -78,21 +87,72 @@ Main styles
     flex-direction: column;
 }
 
+/** Top section
+*/
+
 header {
     background-color: var(--dark-blue);
+}
+
+.header-content {
+    margin: auto;
+    margin-bottom: 80px;
+    padding: 20px 15px;
+    max-width: var(--content-width);
     display: flex;
     justify-content: space-between;
 }
 
 .links > * {
+    padding-left: 20px;
     color: var(--light-grey);
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .top {
     background-color: var(--dark-blue);
     color: var(--light-grey);
 }
+
+.top-content {
+    margin: auto;
+    padding: 20px 15px;
+    padding-bottom: 110px;
+    max-width: var(--content-width);    
+    display: flex;
+    gap: 40px;
+}
+
+.top-content *{
+    flex-basis: 50%;
+}
+
+.top-text {
+    padding: 10px 0;
+}
+
+.top-text > p {
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.top-text > button {
+    margin-top: 16px;
+    padding: 7px 32px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.top-content img {
+    width: 100%;
+    max-height: 240px;
+    border-radius: 10px;
+    object-fit: cover;    
+}
+
+/** Info section
+*/
 
 .quote-section {
     background-color: var(--light-grey);
