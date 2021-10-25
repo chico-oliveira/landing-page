@@ -68,7 +68,7 @@ h4 {
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 button {
@@ -159,7 +159,8 @@ header {
 
 .info-content {
     margin: auto;
-    width: var(--content-width);
+    margin-bottom: 100px;
+    max-width: var(--content-width);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,19 +172,37 @@ header {
 
 .info-images {
     display: flex;
-    gap: 80px;
+    gap: 12px;
 }
 
 .item {
     display: flex;
     flex-direction: column;
     align-items: center;    
+    max-width: 180px;
+}
+
+#item1 .box {
+    background-color: var(--light-grey);
+}
+
+#item2 .box {
+    background-color: var(--gradient2);
+}
+
+#item3 .box {
+    background-color: var(--gradient3);
+}
+
+#item4 .box {
+    background-color: var(--dark-blue);
 }
 
 .item .box {
-    margin-bottom: 8px;
-    width: 200px;
-    height: 200px;
+    margin-bottom:12px;
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
 }
 
 .item p {
@@ -198,19 +217,82 @@ header {
     background-color: var(--light-grey);
 }
 
-.quote-section p {
-    color: var(--dark-blue);
-    font-size: 36px;
-    font-weight: lighter;
+.quote-content {
+    max-width: var(--content-width);
+    margin: auto;
+    padding: 100px 130px;
 }
 
+.quote-section p {
+    padding-bottom: 20px;
+    color: var(--dark-blue);
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.quote-section h4 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+
+/** Signup section
+*/
+
 .sign-up {
+    margin: 80px auto;
+    padding: 60px 100px;
+    max-width: var(--content-width);
     background-color: var(--button-bg);
     color: var(--cream-white);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.sign-text {
+    margin-left: 40px;
+}
+
+.sign-text p {
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.sign-up button {
+    padding: 6px 28px;
+    height: 100%;
+    border-width: 2px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/** Footer section
+*/
 
 footer {
     flex: 1;
+    padding: 30px;
     background-color: var(--dark-blue);
     color: var(--cream-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img {
+    width: 28px;
+    padding-right: 6px;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    font-weight: 700;
 }
