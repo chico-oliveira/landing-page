@@ -4,8 +4,7 @@ Imports
 #######
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400&family=Roboto:wght@100;300;400;700;900&display=swap');
 
 /* 
 ############################################################################
@@ -15,6 +14,8 @@ Creates variables so repeat values can be referenced throughout the css file
 
 :root {
     --dark-blue: #1F2937;
+    --gradient3: #5E6671;
+    --gradient2: #A7ACB3;
     --button-bg: #3882F6;
     --light-grey: #E5E7EB;
     --dark-grey: #696969;
@@ -106,6 +107,7 @@ header {
 .links > * {
     padding-left: 20px;
     color: var(--light-grey);
+    font-family: 'Overpass', sans-serif;
     font-size: 17px;
 }
 
@@ -116,6 +118,7 @@ header {
 
 .top-content {
     margin: auto;
+    margin-bottom: 45px;
     padding: 20px 15px;
     padding-bottom: 110px;
     max-width: var(--content-width);    
@@ -152,6 +155,43 @@ header {
 }
 
 /** Info section
+*/
+
+.info-content {
+    margin: auto;
+    width: var(--content-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-heading {
+    margin-bottom: 40px;
+}
+
+.info-images {
+    display: flex;
+    gap: 80px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.item .box {
+    margin-bottom: 8px;
+    width: 200px;
+    height: 200px;
+}
+
+.item p {
+    font-size: 17px;
+    text-align: center;
+}
+
+/** Quote section
 */
 
 .quote-section {
