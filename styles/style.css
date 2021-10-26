@@ -17,7 +17,8 @@ Creates variables so repeat values can be referenced throughout the css file
     --green3: #3E5B49;
     --green2: #7A9D87;
     --green1: #C5E8D0;
-    --button-bg: #52b671;
+    --link-green: #13a542;
+    --button-bg: #227e3f;
     --light-grey: #E5E7EB;
     --dark-grey: #696969;
     --cream-white: #F9FAF8;
@@ -83,8 +84,13 @@ button:hover {
     color: var(--button-bg);
 }
 
+/* Accessibility*/
+button:focus-visible {
+    border: solid 2px var(--green1);  
+  }
+
 a:hover {
-    color: var(--button-bg);
+    color: var(--link-green);
 }
 
 /* 
@@ -279,6 +285,10 @@ header {
     border-radius: 8px;
     font-size: 16px;
     font-weight: 700;
+}
+
+.sign-up button:focus-visible {
+    border: solid 2px var(--dark-green);  
 }
 
 /** Footer section
