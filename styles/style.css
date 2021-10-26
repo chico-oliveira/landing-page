@@ -13,10 +13,11 @@ Creates variables so repeat values can be referenced throughout the css file
 */
 
 :root {
-    --dark-blue: #1F2937;
-    --gradient3: #5E6671;
-    --gradient2: #A7ACB3;
-    --button-bg: #3882F6;
+    --dark-green: #14281C;
+    --green3: #3E5B49;
+    --green2: #7A9D87;
+    --green1: #C5E8D0;
+    --button-bg: #52b671;
     --light-grey: #E5E7EB;
     --dark-grey: #696969;
     --cream-white: #F9FAF8;
@@ -47,7 +48,7 @@ h1, h3, h5 {
 }
 
 h2, h4 {
-    color: var(--dark-blue);
+    color: var(--dark-green);
     font-weight: bolder;
 }
 
@@ -72,8 +73,18 @@ h5 {
 }
 
 button {
-    background-color: #3882F6;
+    background-color: var(--button-bg);
     color: var(--cream-white);    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--cream-white);
+    color: var(--button-bg);
+}
+
+a:hover {
+    color: var(--button-bg);
 }
 
 /* 
@@ -92,7 +103,7 @@ Main styles
 */
 
 header {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-green);
 }
 
 .header-content {
@@ -112,7 +123,7 @@ header {
 }
 
 .top {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-green);
     color: var(--light-grey);
 }
 
@@ -183,19 +194,19 @@ header {
 }
 
 #item1 .box {
-    background-color: var(--light-grey);
+    background-color: var(--green1);
 }
 
 #item2 .box {
-    background-color: var(--gradient2);
+    background-color: var(--green2);
 }
 
 #item3 .box {
-    background-color: var(--gradient3);
+    background-color: var(--green3);
 }
 
 #item4 .box {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-green);
 }
 
 .item .box {
@@ -214,7 +225,7 @@ header {
 */
 
 .quote-section {
-    background-color: var(--light-grey);
+    background-color: var(--green1);
 }
 
 .quote-content {
@@ -225,7 +236,7 @@ header {
 
 .quote-section p {
     padding-bottom: 20px;
-    color: var(--dark-blue);
+    color: var(--dark-green);
     font-size: 36px;
     font-weight: 300;
 }
@@ -264,6 +275,7 @@ header {
     padding: 6px 28px;
     height: 100%;
     border-width: 2px;
+    border-color: var(--cream-white);
     border-radius: 8px;
     font-size: 16px;
     font-weight: 700;
@@ -275,7 +287,7 @@ header {
 footer {
     flex: 1;
     padding: 30px;
-    background-color: var(--dark-blue);
+    background-color: var(--dark-green);
     color: var(--cream-white);
     display: flex;
     justify-content: center;
