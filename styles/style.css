@@ -62,7 +62,7 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;   
+    font-size: clamp(19px, 3vw, 24px);   
 }
 
 h4 {
@@ -119,13 +119,14 @@ header {
     max-width: var(--content-width);
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .links > * {
     padding-left: 20px;
     color: var(--light-grey);
     font-family: 'Overpass', sans-serif;
-    font-size: 17px;
+    font-size: clamp(15px, 3vw, 17px);
 }
 
 .top {
@@ -166,6 +167,7 @@ header {
 
 .top-content img {
     width: 100%;
+    max-width: 490px;
     max-height: 240px;
     border-radius: 10px;
     object-fit: cover;    
@@ -259,13 +261,15 @@ header {
 .sign-up {
     margin: 80px auto;
     padding: 60px 100px;
-    max-width: var(--content-width);
+    width: var(--content-width);
+    max-width: 90vw;
     background-color: var(--button-bg);
     color: var(--cream-white);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .sign-text {
@@ -279,7 +283,7 @@ header {
 
 .sign-up button {
     padding: 6px 28px;
-    height: 100%;
+    min-width:115px;
     border-width: 2px;
     border-color: var(--cream-white);
     border-radius: 8px;
@@ -317,4 +321,58 @@ footer a {
 
 footer p {
     font-weight: 700;
+}
+
+/* 
+#############
+Media Queries
+#############
+*/
+
+@media (max-width: 740px) {
+  .top-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .top-text {
+      text-align: center;
+  }
+
+  .top-content > img {
+      display: flex;
+  }
+
+  .info-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .sign-up {
+      padding: 20px;
+      flex-direction: column;
+  }
+  
+  .sign-text {
+      margin: 0;
+      text-align: center;
+  }
+
+  .quote-content {
+      padding: 100px 11vw;
+  }
+
+  .quote-section p {
+      font-size: clamp(1rem, 5vw, 12rem);
+  }
+
+  .quote-section h4 {
+      font-size: 3vw;
+  }
+
+  footer > * {
+      font-size: clamp(0.6rem, 2vw, 4rem);
+  }
 }
