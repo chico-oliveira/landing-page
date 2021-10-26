@@ -198,7 +198,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;    
-    max-width: 180px;
+    max-width: clamp(160px, 3vw, 180px);
 }
 
 #item1 .box {
@@ -221,11 +221,13 @@ header {
     margin-bottom:12px;
     width: 160px;
     height: 160px;
+    width: clamp(150px, 3vw, 160px);
+    height: clamp(150px, 3vw, 160px);
     border-radius: 12px;
 }
 
 .item p {
-    font-size: 17px;
+    font-size: clamp(15px, 3vw, 17px);
     text-align: center;
 }
 
