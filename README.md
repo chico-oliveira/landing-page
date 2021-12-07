@@ -1,4 +1,4 @@
-# landing-page
+# Landing Page
 A standard template for a Landing page.
 
 ## Page
